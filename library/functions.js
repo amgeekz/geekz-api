@@ -5,8 +5,8 @@ const { User } = require("../database/model");
 const filesize = require("../controller/filesize");
 const { user } = require("./settings");
 const pool = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ234567890".split("");
-const creator = "Farhannnnn";
-global.hitCount = { count: 0 }
+const creator = "AmGeekz";
+global.hitCount = { count: null }
 
 exports.hitCounter = async (add) => {
 	const hit = await User.findOne({ gmail: user });
